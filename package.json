@@ -1,10 +1,17 @@
 {
-  "name": "redux-object",
+  "name": "@sebastian_stampfel/redux-object-vitesafe",
   "version": "1.0.1",
   "description": "Builds complex JS object from normalized redux store. Best works with json-api-normalizer",
-  "main": "dist/bundle.min.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/redux-object-vitesafe.umd.cjs",
+  "module": "./dist/redux-object-vitesafe.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --output-filename bundle.min.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "clean": "rimraf dist coverage lib",
     "coverage": "nyc _mocha --require @babel/register",
     "lint": "eslint src --ext .js",
@@ -12,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yury-dymov/redux-object.git"
+    "url": "git+https://github.com/sebastianstampfel/redux-object-vitesafe.git"
   },
   "keywords": [
     "redux",
@@ -29,6 +36,7 @@
     "core-js": "3"
   },
   "devDependencies": {
+    "vite": "^4.3.9",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.13",
     "@babel/register": "^7.0.0",

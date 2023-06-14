@@ -1,4 +1,7 @@
-# redux-object
+# redux-object-vitesafe
+
+## Fork of redux-object
+Allows the abandoned redux-object package to be used in Vite projects.
 
 [![npm version](https://img.shields.io/npm/v/redux-object.svg?style=flat)](https://www.npmjs.com/package/redux-object)
 [![Downloads](http://img.shields.io/npm/dm/redux-object.svg?style=flat-square)](https://npmjs.org/package/redux-object)
